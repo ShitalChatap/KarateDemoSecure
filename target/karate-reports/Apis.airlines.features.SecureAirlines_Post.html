@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"21e17a72-4135-49b3-9440-66d2709619c4",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>Apis.airlines.features.SecureAirlines_Post</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-07-05 04:24:19 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>Add airline details using singleline payload</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:12]"><span>[2:12]</span> <span>Add airline details using multiline payload</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">Apis/airlines/features/SecureAirlines_Post.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Online Fake API-Airlines-Post-secure</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">execute</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">Add airline details using singleline payload</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>3014</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url secureBaseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">16:24:15.860 &lt;&lt; lock released, cached callSingle: classpath:Authentication/Authentication.feature
+16:24:15.878 eyJraWQiOiJndnVnbFZUZ2k5R0dDTnh1NEktNjJjclJSNGk2MlNZUW9EUUpvdDB0OEdNIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULkJEbWlnQWxnRDFLemh2Q1lveVZtNUsxM0ZGQjNOOTd1SW9DeDlvSUlMd1Uub2FyMjdvczltZVJuSEpUd1M0eDciLCJpc3MiOiJodHRwczovL2Rldi00NTc5MzEub2t0YS5jb20vb2F1dGgyL2F1c2hkNGM5NVF0RkhzZld0NHg2IiwiYXVkIjoiYXBpIiwiaWF0IjoxNzIwMTc2ODU1LCJleHAiOjE3MjAxODA0NTUsImNpZCI6IjBvYWhkaGprdXRhR2NJSzJNNHg2IiwidWlkIjoiMDB1aGVuaDFwVkRNZzJ1ZXg0eDYiLCJzY3AiOlsib2ZmbGluZV9hY2Nlc3MiXSwiYXV0aF90aW1lIjoxNzIwMTc2ODU1LCJzdWIiOiJhcGktdXNlcjRAaXd0Lm5ldCJ9.izBs2mUas9UQ4w4huPzuL3IfaCsWTmiounX_D3b0FDObgWJyHdlAnsyWpKBadCYbvph6fUHaWSS0aT5NpbfdYlJmLWMSMjxk06iS_K7G-mYHMqW6Du4maI1IXNMVKXvokk1wFgaQBPSUZGcRetjiK2VFJwmXSHDe2ds_KvTd5Yle9EmQSbiNS0sY2P-pmVjMyRX45N7fks006xEoI2oxCWdEfWFauMEi58cFJv7TUqpsE10s0KmFXATZxkCUXJPemK6VMhoDaUZlW8SZ1ASUyqtEedvou4crMVNsQfgO_gXM1ShZL5FBiRfAC3e4u1ShVZnHk4hI3DsPwvE50BVhFQ 
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.4.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">Authentication.Authentication</div>
+      </div>
+      <div class="time-cell passed">2980</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Content-Type = &#39;application/x-www-form-urlencoded; charset=utf-8&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.5">16:24:12.762 karate.env system property was: null 
+16:24:12.775 &gt;&gt; lock acquired, begin callSingle: classpath:Authentication/Authentication.feature
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field scope = SCOPE</span>
+      </div>
+    </div>
+    <div class="time-cell passed">177</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field grant_type = GRANT_TYPE</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field username = USER_NAME</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field password = PASSWORD</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field client_id = CLIENT_ID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>url AUTHURI</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.12">
+      <div class="step-ref passed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2790</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.12">16:24:14.045 request:
+1 &gt; POST https://dev-457931.okta.com/oauth2/aushd4c95QtFHsfWt4x6/v1/token
+1 &gt; Content-Type: application/x-www-form-urlencoded; charset=utf-8
+1 &gt; Content-Length: 120
+1 &gt; Host: dev-457931.okta.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 &gt; Accept-Encoding: gzip,deflate
+scope=offline_access&amp;grant_type=password&amp;username=api-user4%40iwt.net&amp;password=b3z0nV0cLO&amp;client_id=0oahdhjkutaGcIK2M4x6
+
+16:24:15.840 response time in milliseconds: 1779
+1 &lt; 200
+1 &lt; Date: Fri, 05 Jul 2024 10:54:15 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Server: nginx
+1 &lt; x-okta-request-id: c7ff61589235530d89918aed942264c5
+1 &lt; x-xss-protection: 0
+1 &lt; p3p: CP=&quot;HONK&quot;
+1 &lt; set-cookie: sid=&quot;&quot;;Version=1;Path=/;Max-Age=0
+1 &lt; set-cookie: autolaunch_triggered=&quot;&quot;; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/
+1 &lt; set-cookie: JSESSIONID=4844DB35CEC0BEF06A73AAE7B1AE2192; Path=/; Secure; HttpOnly
+1 &lt; content-security-policy: default-src &#39;self&#39; dev-457931.okta.com *.oktacdn.com; connect-src &#39;self&#39; dev-457931.okta.com dev-457931-admin.okta.com *.oktacdn.com *.mixpanel.com *.mapbox.com *.mtls.okta.com https://oinmanager.okta.com data: data.pendo.io pendo-static-5634101834153984.storage.googleapis.com pendo-static-5391521872216064.storage.googleapis.com; script-src &#39;unsafe-inline&#39; &#39;unsafe-eval&#39; &#39;self&#39; dev-457931.okta.com *.oktacdn.com; style-src &#39;unsafe-inline&#39; &#39;self&#39; dev-457931.okta.com *.oktacdn.com; frame-src &#39;self&#39; dev-457931.okta.com dev-457931-admin.okta.com login.okta.com *.vidyard.com; img-src &#39;self&#39; dev-457931.okta.com *.oktacdn.com *.tiles.mapbox.com *.mapbox.com *.vidyard.com data: data.pendo.io pendo-static-5634101834153984.storage.googleapis.com pendo-static-5391521872216064.storage.googleapis.com blob:; font-src &#39;self&#39; dev-457931.okta.com data: *.oktacdn.com fonts.gstatic.com; frame-ancestors &#39;self&#39;
+1 &lt; x-rate-limit-limit: 2000
+1 &lt; x-rate-limit-remaining: 1999
+1 &lt; x-rate-limit-reset: 1720176915
+1 &lt; cache-control: no-cache, no-store
+1 &lt; pragma: no-cache
+1 &lt; expires: 0
+1 &lt; referrer-policy: strict-origin-when-cross-origin
+1 &lt; accept-ch: Sec-CH-UA-Platform-Version
+1 &lt; x-content-type-options: nosniff
+1 &lt; Strict-Transport-Security: max-age=315360000; includeSubDomains
+1 &lt; X-Robots-Tag: noindex,nofollow
+1 &lt; Set-Cookie: sid=&quot;&quot;;Version=1;Path=/;Max-Age=0
+1 &lt; Set-Cookie: autolaunch_triggered=&quot;&quot;; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/
+1 &lt; Set-Cookie: JSESSIONID=4844DB35CEC0BEF06A73AAE7B1AE2192; Path=/; Secure; HttpOnly
+{&quot;token_type&quot;:&quot;Bearer&quot;,&quot;expires_in&quot;:3600,&quot;access_token&quot;:&quot;eyJraWQiOiJndnVnbFZUZ2k5R0dDTnh1NEktNjJjclJSNGk2MlNZUW9EUUpvdDB0OEdNIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULkJEbWlnQWxnRDFLemh2Q1lveVZtNUsxM0ZGQjNOOTd1SW9DeDlvSUlMd1Uub2FyMjdvczltZVJuSEpUd1M0eDciLCJpc3MiOiJodHRwczovL2Rldi00NTc5MzEub2t0YS5jb20vb2F1dGgyL2F1c2hkNGM5NVF0RkhzZld0NHg2IiwiYXVkIjoiYXBpIiwiaWF0IjoxNzIwMTc2ODU1LCJleHAiOjE3MjAxODA0NTUsImNpZCI6IjBvYWhkaGprdXRhR2NJSzJNNHg2IiwidWlkIjoiMDB1aGVuaDFwVkRNZzJ1ZXg0eDYiLCJzY3AiOlsib2ZmbGluZV9hY2Nlc3MiXSwiYXV0aF90aW1lIjoxNzIwMTc2ODU1LCJzdWIiOiJhcGktdXNlcjRAaXd0Lm5ldCJ9.izBs2mUas9UQ4w4huPzuL3IfaCsWTmiounX_D3b0FDObgWJyHdlAnsyWpKBadCYbvph6fUHaWSS0aT5NpbfdYlJmLWMSMjxk06iS_K7G-mYHMqW6Du4maI1IXNMVKXvokk1wFgaQBPSUZGcRetjiK2VFJwmXSHDe2ds_KvTd5Yle9EmQSbiNS0sY2P-pmVjMyRX45N7fks006xEoI2oxCWdEfWFauMEi58cFJv7TUqpsE10s0KmFXATZxkCUXJPemK6VMhoDaUZlW8SZ1ASUyqtEedvou4crMVNsQfgO_gXM1ShZL5FBiRfAC3e4u1ShVZnHk4hI3DsPwvE50BVhFQ&quot;,&quot;scope&quot;:&quot;offline_access&quot;,&quot;refresh_token&quot;:&quot;40WXfmn9QCtmAE_2-l9QPmBxZmqP--o3UcrXRKvrEBk&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def access_token = response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39;+authInfo.authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;airlines&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;_id&quot;:&quot;1111&quot;,&quot;name&quot;:&quot;Sri Lankan Airways&quot;,&quot;country&quot;:&quot;Sri Lanka&quot;,&quot;logo&quot;:&quot;https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Qatar_Airways_Logo.svg/sri_lanka.png&quot;,&quot;slogan&quot;:&quot;From Sri Lanka&quot;,&quot;head_quaters&quot;:&quot;Katunayake, Sri Lanka&quot;,&quot;website&quot;:&quot;www.srilankaaairways.com&quot;,&quot;established&quot;:&quot;1990&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">32</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2968</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">16:24:15.943 request:
+1 &gt; POST https://api.instantwebtools.net/v2/airlines
+1 &gt; Authorization: Bearer eyJraWQiOiJndnVnbFZUZ2k5R0dDTnh1NEktNjJjclJSNGk2MlNZUW9EUUpvdDB0OEdNIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULkJEbWlnQWxnRDFLemh2Q1lveVZtNUsxM0ZGQjNOOTd1SW9DeDlvSUlMd1Uub2FyMjdvczltZVJuSEpUd1M0eDciLCJpc3MiOiJodHRwczovL2Rldi00NTc5MzEub2t0YS5jb20vb2F1dGgyL2F1c2hkNGM5NVF0RkhzZld0NHg2IiwiYXVkIjoiYXBpIiwiaWF0IjoxNzIwMTc2ODU1LCJleHAiOjE3MjAxODA0NTUsImNpZCI6IjBvYWhkaGprdXRhR2NJSzJNNHg2IiwidWlkIjoiMDB1aGVuaDFwVkRNZzJ1ZXg0eDYiLCJzY3AiOlsib2ZmbGluZV9hY2Nlc3MiXSwiYXV0aF90aW1lIjoxNzIwMTc2ODU1LCJzdWIiOiJhcGktdXNlcjRAaXd0Lm5ldCJ9.izBs2mUas9UQ4w4huPzuL3IfaCsWTmiounX_D3b0FDObgWJyHdlAnsyWpKBadCYbvph6fUHaWSS0aT5NpbfdYlJmLWMSMjxk06iS_K7G-mYHMqW6Du4maI1IXNMVKXvokk1wFgaQBPSUZGcRetjiK2VFJwmXSHDe2ds_KvTd5Yle9EmQSbiNS0sY2P-pmVjMyRX45N7fks006xEoI2oxCWdEfWFauMEi58cFJv7TUqpsE10s0KmFXATZxkCUXJPemK6VMhoDaUZlW8SZ1ASUyqtEedvou4crMVNsQfgO_gXM1ShZL5FBiRfAC3e4u1ShVZnHk4hI3DsPwvE50BVhFQ
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 295
+1 &gt; Host: api.instantwebtools.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;_id&quot;:&quot;1111&quot;,&quot;name&quot;:&quot;Sri Lankan Airways&quot;,&quot;country&quot;:&quot;Sri Lanka&quot;,&quot;logo&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/en\/thumb\/9\/9b\/Qatar_Airways_Logo.svg\/sri_lanka.png&quot;,&quot;slogan&quot;:&quot;From Sri Lanka&quot;,&quot;head_quaters&quot;:&quot;Katunayake, Sri Lanka&quot;,&quot;website&quot;:&quot;www.srilankaaairways.com&quot;,&quot;established&quot;:&quot;1990&quot;}
+
+16:24:18.899 response time in milliseconds: 2954
+1 &lt; 200
+1 &lt; Server: nginx/1.24.0 (Ubuntu)
+1 &lt; Date: Fri, 05 Jul 2024 10:54:18 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 326
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;146-ajYaQaa4+gWJnhf6JSShoyvbCu8&quot;
+{&quot;_id&quot;:&quot;443ed1e3-9b7b-4305-98ac-6569f0ec2e02&quot;,&quot;name&quot;:&quot;Sri Lankan Airways&quot;,&quot;country&quot;:&quot;Sri Lanka&quot;,&quot;logo&quot;:&quot;https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Qatar_Airways_Logo.svg/sri_lanka.png&quot;,&quot;slogan&quot;:&quot;From Sri Lanka&quot;,&quot;head_quaters&quot;:&quot;Katunayake, Sri Lanka&quot;,&quot;website&quot;:&quot;www.srilankaaairways.com&quot;,&quot;established&quot;:&quot;1990&quot;,&quot;__v&quot;:0}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:12]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">execute</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:12]</span>
+                <span class="scenario-name">Add airline details using multiline payload</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>753</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url secureBaseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">16:24:18.918 karate.env system property was: null 
+16:24:18.920 eyJraWQiOiJndnVnbFZUZ2k5R0dDTnh1NEktNjJjclJSNGk2MlNZUW9EUUpvdDB0OEdNIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULkJEbWlnQWxnRDFLemh2Q1lveVZtNUsxM0ZGQjNOOTd1SW9DeDlvSUlMd1Uub2FyMjdvczltZVJuSEpUd1M0eDciLCJpc3MiOiJodHRwczovL2Rldi00NTc5MzEub2t0YS5jb20vb2F1dGgyL2F1c2hkNGM5NVF0RkhzZld0NHg2IiwiYXVkIjoiYXBpIiwiaWF0IjoxNzIwMTc2ODU1LCJleHAiOjE3MjAxODA0NTUsImNpZCI6IjBvYWhkaGprdXRhR2NJSzJNNHg2IiwidWlkIjoiMDB1aGVuaDFwVkRNZzJ1ZXg0eDYiLCJzY3AiOlsib2ZmbGluZV9hY2Nlc3MiXSwiYXV0aF90aW1lIjoxNzIwMTc2ODU1LCJzdWIiOiJhcGktdXNlcjRAaXd0Lm5ldCJ9.izBs2mUas9UQ4w4huPzuL3IfaCsWTmiounX_D3b0FDObgWJyHdlAnsyWpKBadCYbvph6fUHaWSS0aT5NpbfdYlJmLWMSMjxk06iS_K7G-mYHMqW6Du4maI1IXNMVKXvokk1wFgaQBPSUZGcRetjiK2VFJwmXSHDe2ds_KvTd5Yle9EmQSbiNS0sY2P-pmVjMyRX45N7fks006xEoI2oxCWdEfWFauMEi58cFJv7TUqpsE10s0KmFXATZxkCUXJPemK6VMhoDaUZlW8SZ1ASUyqtEedvou4crMVNsQfgO_gXM1ShZL5FBiRfAC3e4u1ShVZnHk4hI3DsPwvE50BVhFQ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39;+authInfo.authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;airlines&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.16">{
+		&quot;_id&quot;:&quot;252d3bca-d9bb-476c-9a97-562d685e235c&quot;,
+		&quot;name&quot;: &quot;Sri Lankan Airways&quot;,
+		&quot;country&quot;: &quot;Sri Lanka&quot;,
+		&quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Qatar_Airways_Logo.svg/sri_lanka.png&quot;,
+		&quot;slogan&quot;: &quot;From Sri Lanka&quot;,
+		&quot;head_quaters&quot;: &quot;Katunayake, Sri Lanka&quot;,
+		&quot;website&quot;: &quot;www.srilankaaairways.com&quot;,
+		&quot;established&quot;: &quot;1990&quot;
+      }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">751</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.29">16:24:18.927 request:
+1 &gt; POST https://api.instantwebtools.net/v2/airlines
+1 &gt; Authorization: Bearer eyJraWQiOiJndnVnbFZUZ2k5R0dDTnh1NEktNjJjclJSNGk2MlNZUW9EUUpvdDB0OEdNIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULkJEbWlnQWxnRDFLemh2Q1lveVZtNUsxM0ZGQjNOOTd1SW9DeDlvSUlMd1Uub2FyMjdvczltZVJuSEpUd1M0eDciLCJpc3MiOiJodHRwczovL2Rldi00NTc5MzEub2t0YS5jb20vb2F1dGgyL2F1c2hkNGM5NVF0RkhzZld0NHg2IiwiYXVkIjoiYXBpIiwiaWF0IjoxNzIwMTc2ODU1LCJleHAiOjE3MjAxODA0NTUsImNpZCI6IjBvYWhkaGprdXRhR2NJSzJNNHg2IiwidWlkIjoiMDB1aGVuaDFwVkRNZzJ1ZXg0eDYiLCJzY3AiOlsib2ZmbGluZV9hY2Nlc3MiXSwiYXV0aF90aW1lIjoxNzIwMTc2ODU1LCJzdWIiOiJhcGktdXNlcjRAaXd0Lm5ldCJ9.izBs2mUas9UQ4w4huPzuL3IfaCsWTmiounX_D3b0FDObgWJyHdlAnsyWpKBadCYbvph6fUHaWSS0aT5NpbfdYlJmLWMSMjxk06iS_K7G-mYHMqW6Du4maI1IXNMVKXvokk1wFgaQBPSUZGcRetjiK2VFJwmXSHDe2ds_KvTd5Yle9EmQSbiNS0sY2P-pmVjMyRX45N7fks006xEoI2oxCWdEfWFauMEi58cFJv7TUqpsE10s0KmFXATZxkCUXJPemK6VMhoDaUZlW8SZ1ASUyqtEedvou4crMVNsQfgO_gXM1ShZL5FBiRfAC3e4u1ShVZnHk4hI3DsPwvE50BVhFQ
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 327
+1 &gt; Host: api.instantwebtools.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;_id&quot;:&quot;252d3bca-d9bb-476c-9a97-562d685e235c&quot;,&quot;name&quot;:&quot;Sri Lankan Airways&quot;,&quot;country&quot;:&quot;Sri Lanka&quot;,&quot;logo&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/en\/thumb\/9\/9b\/Qatar_Airways_Logo.svg\/sri_lanka.png&quot;,&quot;slogan&quot;:&quot;From Sri Lanka&quot;,&quot;head_quaters&quot;:&quot;Katunayake, Sri Lanka&quot;,&quot;website&quot;:&quot;www.srilankaaairways.com&quot;,&quot;established&quot;:&quot;1990&quot;}
+
+16:24:19.675 response time in milliseconds: 747
+1 &lt; 200
+1 &lt; Server: nginx/1.24.0 (Ubuntu)
+1 &lt; Date: Fri, 05 Jul 2024 10:54:19 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 326
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;146-BzAxjrLGJeBr+5ZhSazg6/8OlXU&quot;
+{&quot;_id&quot;:&quot;21c3bdb2-2940-4f9b-a4ec-26f4444337f1&quot;,&quot;name&quot;:&quot;Sri Lankan Airways&quot;,&quot;country&quot;:&quot;Sri Lanka&quot;,&quot;logo&quot;:&quot;https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Qatar_Airways_Logo.svg/sri_lanka.png&quot;,&quot;slogan&quot;:&quot;From Sri Lanka&quot;,&quot;head_quaters&quot;:&quot;Katunayake, Sri Lanka&quot;,&quot;website&quot;:&quot;www.srilankaaairways.com&quot;,&quot;established&quot;:&quot;1990&quot;,&quot;__v&quot;:0}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

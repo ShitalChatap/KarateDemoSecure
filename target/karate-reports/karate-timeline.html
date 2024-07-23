@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"Apis\/airlines\/features\/Secure_Get_Aairlines[1:4]","start":1720086200657,"end":1720086202513,"title":"Apis\/airlines\/features\/Secure_Get_Aairlines[1:4] 15:13:20.657-15:13:22.513 Get all airlines details"},{"id":2,"group":1,"content":"Apis\/airlines\/features\/Secure_Get_Aairlines[2:12]","start":1720086202532,"end":1720086203199,"title":"Apis\/airlines\/features\/Secure_Get_Aairlines[2:12] 15:13:22.532-15:13:23.199 Get specific airline details based on id"},{"id":3,"group":1,"content":"Apis\/airlines\/features\/SecureAirlines_Post[1:3]","start":1720086195358,"end":1720086198466,"title":"Apis\/airlines\/features\/SecureAirlines_Post[1:3] 15:13:15.358-15:13:18.466 Add airline details using singleline payload"},{"id":4,"group":1,"content":"Apis\/airlines\/features\/SecureAirlines_Post[2:12]","start":1720086198483,"end":1720086199158,"title":"Apis\/airlines\/features\/SecureAirlines_Post[2:12] 15:13:18.483-15:13:19.158 Add airline details using multiline payload"},{"id":5,"group":1,"content":"Apis\/airlines\/features\/SecureAirlines_Post[3:33]","start":1720086199169,"end":1720086199836,"title":"Apis\/airlines\/features\/SecureAirlines_Post[3:33] 15:13:19.169-15:13:19.836 Add airline details using payload from file"},{"id":6,"group":1,"content":"Apis\/passenger\/feature\/Secure_Get_passenger[1:4]","start":1720086203373,"end":1720086204451,"title":"Apis\/passenger\/feature\/Secure_Get_passenger[1:4] 15:13:23.373-15:13:24.451 Get all passenger details"},{"id":7,"group":1,"content":"Apis\/passenger\/feature\/Secure_Get_passenger[2:13]","start":1720086204463,"end":1720086205116,"title":"Apis\/passenger\/feature\/Secure_Get_passenger[2:13] 15:13:24.463-15:13:25.116 Get specific Passenger details based on id"},{"id":8,"group":1,"content":"Apis\/passenger\/feature\/Secure_Post_passenger[1:3]","start":1720086205214,"end":1720086205869,"title":"Apis\/passenger\/feature\/Secure_Post_passenger[1:3] 15:13:25.214-15:13:25.869 Add passenger details using singleline payload","className":"failed"},{"id":9,"group":1,"content":"Apis\/passenger\/feature\/Secure_Post_passenger[2:12]","start":1720086205908,"end":1720086206544,"title":"Apis\/passenger\/feature\/Secure_Post_passenger[2:12] 15:13:25.908-15:13:26.544 Add passenger details using multiline payload","className":"failed"},{"id":10,"group":1,"content":"Apis\/passenger\/feature\/Secure_Post_passenger[3:33]","start":1720086206553,"end":1720086207205,"title":"Apis\/passenger\/feature\/Secure_Post_passenger[3:33] 15:13:26.553-15:13:27.205 Add passenger details using payload from file","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
